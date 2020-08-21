@@ -8,7 +8,26 @@
 //   "This console.log() fires when index.js loads - before DOMContentLoaded is triggered"
 // );
 
+/////////ORIGINAL/////////
+
+// document.addEventListener("DOMContentLoaded", function() {
+//   let newText = document.getElementById("text")
+//   newText.textContent = "This is really cool!"
+// })
+
+//////////REFACTORED////////////
 document.addEventListener("DOMContentLoaded", function() {
-  let newText = document.getElementById("text")
-  newText.textContent = "This is really cool!"
+  document.getElementById("text").textContent = "This is really cool!"
 })
+
+///////////LEARN SOLUTION///////////////
+
+// document.addEventListener( "DOMContentLoaded", function () {
+//   updateDOM()
+// } );
+
+
+// function updateDOM() {
+//   document.getElementById( "text" )
+//     .innerHTML = "This is really cool!";
+// }
