@@ -11,6 +11,14 @@ console.log(
 
 
 document.addEventListener("DOMContentLoaded", function() {
-  let doc = document.getElementById("text");
-  doc.innerHTML = "This is really cool!";
+  document.getElementById("text").innerHTML = "This is really cool!";
 });
+
+
+// document.addEventListener("DOMContentLoaded", function() {
+//   updateDomText();
+// });
+
+// function updateDomText(){
+//   document.getElementById("text").innerHTML = "This is really cool!"
+// };
